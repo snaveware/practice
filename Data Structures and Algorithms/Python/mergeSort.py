@@ -1,6 +1,6 @@
 def mergeSort(values):
     size = len(values)
-    if size <=1:
+    if not values or size <=1:
         return values
     
     mid = size//2
@@ -10,11 +10,11 @@ def mergeSort(values):
     leftList = values[:mid]
     rightList = values[mid:]
 
-    left = mergeSort(leftList)
+    leftList = mergeSort(leftList)
 
-    right = mergeSort(rightList)
+    rightList = mergeSort(rightList)
 
-    sorted = merge(left,right)
+    sorted = merge(leftList,rightList)
 
     print("sorted: ",sorted)
 
