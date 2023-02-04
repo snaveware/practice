@@ -10,16 +10,17 @@ class Stack:
         return len(self.stack) == 0
     def get(self):
         return self.stack
-s = Stack()
 
-s.push(1)
-s.push(2)
-s.push(3)
-s.push(4)
-print("before: ",s.get())
-val = s.pop()
-print(val)
+# s = Stack()
 
-print("after: ",s.get())
+# s.push(1)
+# s.push(2)
+# s.push(3)
+# s.push(4)
+# print("before: ",s.get())
+# val = s.pop()
+# print(val)
 
-print("is Empty: ",s.isEmpty())
+# print("after: ",s.get())
+
+# print("is Empty: ",s.isEmpty())

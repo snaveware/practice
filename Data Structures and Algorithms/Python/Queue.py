@@ -8,6 +8,8 @@ class Queue:
         return self.queue.pop(0)
     def peek(self,index):
         return self.queue[index]
+    def isEmpty(self):
+        return len(self.queue ) <= 0
     def get(self):
         return self.queue
 
@@ -17,10 +19,11 @@ q = Queue()
 q.enqueue(1)
 q.enqueue(2)
 q.enqueue(3)
-print("before: ",q.get())
 
-print("peek b4: ",q.peek(1))
+# print("before: ",q.get())
 
-print("dequeue: ",q.dequeue())
-print("after: ",q.get())
-print("peek after: ",q.peek(1))
+# print("peek b4: ",q.peek(1))
+
+# print("dequeue: ",q.dequeue())
+# print("after: ",q.get())
+# print("peek after: ",q.peek(1))
